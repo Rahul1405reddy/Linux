@@ -1,0 +1,29 @@
+---
+
+## User Management Commands 🧑‍💻
+
+### 1. `adduser` - Add a New User
+**Description**: Creates a new user and prompts for the user’s password and other information.
+
+**Command**:
+```bash
+adduser <username>
+Example:
+adduser rahul
+Output:
+Adding user `rahul' ...
+Adding new group `rahul' (1001) ...
+Adding new user `rahul' (1001) with group `rahul' ...
+Creating home directory `/home/rahul' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+Changing the user information for rahul
+Enter the new value, or press ENTER for the default
+        Full Name []: Rahul Reddy
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] Y
