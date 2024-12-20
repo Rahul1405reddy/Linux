@@ -1,0 +1,111 @@
+# Basic Linux Commands 🐧
+
+This file contains essential Linux commands, their descriptions, and examples. These commands are the foundation of working with the Linux operating system.
+
+---
+
+## 1. `pwd` - Print Working Directory
+Description: Displays the absolute path of the current working directory.
+
+Command:
+```bash
+pwd
+```
+
+Example Output:
+```bash
+/home/rahul
+```
+
+---
+
+## 2. `ls` - List Directory Contents
+Description: Lists the files and directories in the current directory.
+
+Command:
+```bash
+ls
+```
+
+Example Outpu:
+```bash
+Documents  Downloads  Pictures  file.txt
+```
+
+---
+
+## 3. `cd` - Change Directory
+Description: Moves between directories in the filesystem.
+
+Command:
+```bash
+cd Documents
+```
+
+Example Output:
+```bash
+$ pwd
+/home/rahul/Documents
+```
+
+---
+
+## 4. `whoami` - Display Current User
+Description: Shows the username of the current user.
+
+Command:
+```bash
+whoami
+```
+
+Example Output:
+```bash
+rahul
+```
+
+---
+
+## 5. `cat` - Concatenate and Display File Content
+Description: Reads and outputs the content of a file to the terminal.
+
+Command:
+```bash
+cat file.txt
+```
+
+Example Output:
+```bash
+Hello, this is a sample file.
+Welcome to Linux learning!
+```
+
+---
+
+## 6. `cp` - Copy Files and Directories
+Description: Copies files or directories from one location to another.
+
+Command:
+```bash
+cp file.txt /home/rahul/Documents
+```
+
+Example Output:
+```bash
+file.txt copied to /home/rahul/Documents
+```
+
+---
+
+## 7. `which` - Locate a Command's Executable
+Description: Displays the full path of the executable for a command.
+
+Command:
+```bash
+which python
+```
+
+Example Output:
+```bash
+/usr/bin/python
+```
+
