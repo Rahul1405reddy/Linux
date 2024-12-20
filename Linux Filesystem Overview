@@ -1,0 +1,93 @@
+The Linux filesystem hierarchy consists of several standard directories, each serving a specific purpose. Below is an overview of some key directories.
+
+## 1. `/bin` - Essential User Binaries
+**Description**: Contains essential binaries (programs) that are required for the system to boot and run in single-user mode. These are basic commands accessible to all users.
+
+**Examples of Contents**:
+```bash
+/bin/ls
+/bin/cp
+/bin/mkdir
+```
+
+---
+
+## 2. `/sbin` - System Binaries
+**Description**: Contains essential binaries for system administration tasks, such as managing services and hardware. These are typically restricted to the root user.
+
+**Examples of Contents**:
+```bash
+/sbin/reboot
+/sbin/fsck
+/sbin/ifconfig
+```
+
+---
+
+## 3. `/var` - Variable Files
+**Description**: Stores variable files such as logs, spool files (for mail or print queues), and temporary files that change during system operation.
+
+**Examples of Contents**:
+```bash
+/var/log          # System logs
+/var/spool        # Print or mail queue
+/var/cache        # Application cache files
+```
+
+---
+
+## 4. `/tmp` - Temporary Files
+**Description**: A directory for temporary files created by programs during execution. Files in `/tmp` are typically cleared on reboot.
+
+**Examples of Contents**:
+```bash
+/tmp/session123.tmp
+/tmp/logs.tmp
+```
+
+---
+
+## 5. `/dev` - Device Files
+**Description**: Contains device files that represent hardware devices such as disks, terminals, and printers. These files act as interfaces to the system's hardware.
+
+**Examples of Contents**:
+```bash
+/dev/sda1         # First hard disk partition
+/dev/tty0         # Terminal
+/dev/null         # Null device
+```
+
+---
+
+## 6. `/etc` - Configuration Files
+**Description**: Contains configuration files for the system and installed applications. These files are typically in plain text format and editable by the root user.
+
+**Examples of Contents**:
+```bash
+/etc/passwd       # User account information
+/etc/fstab        # Filesystem table
+/etc/ssh/sshd_config  # SSH server configuration
+```
+
+---
+
+## 7. `/mnt` - Mount Points
+**Description**: A directory where temporary filesystems or external storage devices (e.g., USB drives) can be mounted.
+
+**Examples of Usage**:
+```bash
+# Mount a USB drive
+mount /dev/sdb1 /mnt
+```
+
+---
+
+## 8. `/media` - Removable Media
+**Description**: Contains subdirectories for mounting removable media such as USB drives, CDs, and DVDs.
+
+**Examples of Contents**:
+```bash
+/media/usb
+/media/cdrom
+```
+
